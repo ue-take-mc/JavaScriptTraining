@@ -29,7 +29,7 @@ app.get('/api/friends/:username([\\w.-]+)', function(req, res) {
 
 
 var PORT = process.env.PORT;
-var HOSTNAME = '192.168.56.101';
+var HOSTNAME = 'localhost';
 
 var server = require('http').createServer(app);
 server.listen(PORT, HOSTNAME, function () {
